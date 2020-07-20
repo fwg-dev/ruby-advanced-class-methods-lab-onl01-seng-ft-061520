@@ -16,13 +16,13 @@ def save
   self.class.all << self
 end
 
-def self.create
+def self.creates
   song = Song.new
   song.save
   song
 end
 
 def self.new_by_name
-  song = Song.new(name)
+  song = Song.new
 end
 end
