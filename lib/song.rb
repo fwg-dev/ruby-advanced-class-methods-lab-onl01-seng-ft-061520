@@ -22,7 +22,10 @@ def self.create
   song
 end
 
-def self.new_by_name
-  song = Song.new
-end
+def self.new_by_name(song_name)
+   song = self.new
+   song.name = song_name
+   song
+ end
+
 end
